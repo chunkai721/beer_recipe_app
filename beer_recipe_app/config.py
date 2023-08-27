@@ -5,7 +5,7 @@ from typing import Tuple
 class Config:
     """Configuration class for the application."""
     
-    SECRET_KEY: str = 'your-secret-key'
+    SECRET_KEY: str = '54685508'
     SQLALCHEMY_DATABASE_URI: str = 'sqlite:///site.db'
     BABEL_DEFAULT_LOCALE: str = 'zh_Hant'
     

@@ -8,3 +8,5 @@ flask_migrate==2.5.3
 alembic==1.4.3
 wtforms==2.3.3
 bootstrap-flask==1.5.1
+Werkzeug~=2.0.0
+jinja2~=3.0.3

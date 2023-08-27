@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_babel import Babel
-from beer_recipe_app.config import config
+from config import config
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()
@@ -20,7 +20,7 @@ def create_app(config_name):
     login_manager.init_app(app)
     babel.init_app(app)
 
-    from beer_recipe_app.views import main
+    from views import main
     app.register_blueprint(main)
 
     return app
