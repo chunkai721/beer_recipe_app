@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant M as Main
+    participant U as User
+    participant R as Recipe
+    M->>U: create_user(username, password)
+    U->>M: return user
+    M->>U: login_user(username, password)
+    U->>M: return user
+    M->>R: create_recipe(name, ingredients, cost)
+    R->>M: return recipe
+    M->>R: update_recipe(id, name, ingredients, cost)
+    R->>M: return recipe
+    M->>R: delete_recipe(id)
+    R->>M: return success
